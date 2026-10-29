@@ -1,0 +1,51 @@
+/* Base y propiedades Flexbox aplicadas al contenedor principal */
+.container {
+    width: 950px;
+    background-color: #eaeaea;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;       /* Paso 1: Convertir el contenedor en flex */
+    flex-wrap: wrap;     /* Paso 1: Permitir que los elementos pasen a la siguiente fila */
+}
+
+/* Barra superior ocupando toda la fila superior */
+.top-nav {
+    height: 150px;
+    background-color: #ffcc00;
+    margin-bottom: 10px;
+    flex: 0 0 100%;      /* Paso 2: Forzar que ocupe el 100% del ancho */
+}
+
+/* Área principal (bloque rosado) con Flexbox para sus elementos internos */
+.main {
+    height: 400px;
+    width: 700px;
+    background-color: deeppink;
+    display: flex;       /* Paso 3: Convertir .main en flex */
+    flex-wrap: wrap;     /* Paso 3: Permitir wrap interno */
+}
+
+/* Bloques azules dentro de .main */
+.sub-content {
+    height: 200px;
+    width: 210px;
+    background-color: mediumblue;
+    margin: 10px;
+}
+
+/* Anuncio verde dentro de .main ocupando toda su fila */
+#advertisement {
+    height: 120px;
+    width: 660px;
+    background-color: #33cc33;
+    margin: 10px;
+    flex: 0 0 100%;      /* Paso 4: Forzar que ocupe todo el ancho interno */
+}
+
+/* Barra lateral celeste */
+.side-nav {
+    height: 400px;
+    width: 210px;
+    background-color: #66ccff;
+    margin-left: 10px;
+}
